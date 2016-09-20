@@ -1,0 +1,4 @@
+UltrasonicSensor	KEYWORD1
+getDist	KEYWORD2
+getSpeed	KEYWORD2
+getPingDuration	KEYWORD2
