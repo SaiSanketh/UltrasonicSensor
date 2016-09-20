@@ -14,10 +14,10 @@ double UltrasonicSensor::getDist() //Returns distance in centimetres
 	delayMicroseconds(10);
 	digitalWrite(trigPin, LOW);
 	duration = pulseIn(echoPin, HIGH);
-	distance = (duration/2) / 29.1;
+	distance = (duration/2) / 29.1; //Conversion assuming the speed of sound to be ~343m/s
 	return distance;
 }
-long UltrasonicSensor::getPingDuration()
+long UltrasonicSensor::getPingDuration() //Returns the ping duration in microseconds
 {
 	long duration;
 	digitalWrite(trigPin, HIGH);
